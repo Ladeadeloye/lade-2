@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+}
+.article-preview {
+  margin-bottom: 10px;
+  height: auto;
+  border-bottom: 4px solid #fafafa;
+}
+
+.article-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1)
+}
+
+.article-preview img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 5px;
+  float: left;
+  margin: 5px 10px;
+}
+
+.article-preview span {
+  font-size: 20px;
+  top: 30px;
+}
+.article-preview h2{
+  margin-left: 20px;
+}
+
+.deleteButton{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.deleteButton{
+  background-color: red;
+  border: none;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight:bold;
+  color: white;
+}

@@ -1,0 +1,45 @@
+import { useState } from "react";
+
+const Homepage = ()=>{
+    const [Name, setName ] = useState('bruhhhhh')
+    const [Age, setAge ] = useState(26)
+    const [Counter, setCounter ] = useState(5)
+
+
+    const handleClick= () => {
+        setName('ladeloye')
+        setAge(18)
+        setCounter(Counter + 1)
+    };
+    const handleClickOne = (personName) => {
+        console.log(`Hey what's good ${personName}`)
+    };
+
+
+    return(
+        <div className="content">
+        <h1>Homepage</h1>
+        <p>{`${Name} is ${Age} years old`}</p>
+        <p>{`${Counter}`}</p>
+        <button onClick={handleClick}>Like</button>
+        <button onClick={()=>{handleClickOne('lade')}}>Click again</button>
+    </div>
+    );
+}
+export default Homepage;
+
+
+function Header() {
+    return (
+        <div className="navbar">
+        <h1>Flicked</h1>
+        <div className="links">
+            <a href="/" className="href">Home</a>
+            <a href="/" className="href">Articles</a>
+            <a href="/" className="href">Profile</a>
+        </div>    
+        </div>
+    );
+}
+
+export default Header;
